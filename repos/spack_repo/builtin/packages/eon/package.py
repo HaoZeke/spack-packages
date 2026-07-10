@@ -23,10 +23,7 @@ class Eon(MesonPackage):
     maintainers("HaoZeke")
     license("BSD-3-Clause", checked_by="HaoZeke")
 
-    version(
-        "2.16.0",
-        sha256="3d4da89a393c8821bf370cb97c9d2403718d83f9cbb5e8b918cd90af14ed52dc",
-    )
+    version("2.16.0", sha256="3d4da89a393c8821bf370cb97c9d2403718d83f9cbb5e8b918cd90af14ed52dc")
 
     # Core first (see packaging blueprint): fortran + tests, no ML/serve/xtb.
     variant("fortran", default=True, description="Build in-tree Fortran potentials")
