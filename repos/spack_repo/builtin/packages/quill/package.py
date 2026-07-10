@@ -21,6 +21,7 @@ class Quill(CMakePackage):
     version("11.1.0", sha256="a4c41068ec51979e1c6d95ae9ab6efc09e654b9815dcb7a1b58b7a430a5cbd13")
     version("11.0.2", sha256="c4208f717e62fc4a7178917c9c39dbb90276d72c3cefd9077d0b973365d72667")
 
+    depends_on("c", type="build")
     depends_on("cxx", type="build")
     depends_on("cmake@3.10:", type="build")
 
